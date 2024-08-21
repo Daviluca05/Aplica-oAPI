@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Aleatórias de Cães</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        #dog-image img {
+            width: 300px; 
+            height: 300px; 
+            object-fit: cover; 
+            border-radius: 10px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: black;
+            font-size: 15px;
+            border-radius:10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; 
+        }
+
+        button:hover {
+            background-color: rgb(85, 197, 81); 
+            font-weight: bold; 
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Veja uma imagem aleatória de um cão</h1>
+    <div id="dog-image"></div>
+    <button onclick="fetchDogImage()">Mostrar Outra Imagem</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
